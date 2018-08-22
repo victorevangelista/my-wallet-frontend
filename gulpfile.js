@@ -13,3 +13,7 @@ gulp.task('default', () => {
 		sequence('deps', 'app', 'server')
 	}
 })
+
+gulp.task('heroku:production', function(){
+  sequence('clean', 'build', 'minify')
+})

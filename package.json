@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp",
-    "start": "node app.js"
+    "dev": "gulp",
+    "production": "gulp --production"
   },
   "keywords": [],
   "author": "Victor Evangelista",
