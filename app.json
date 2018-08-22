@@ -1,0 +1,21 @@
+{
+  "name": "my-wallet-frontend",
+  "scripts": {
+    "postdeploy": "gulp --production"
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
