@@ -11,9 +11,7 @@
   "keywords": [],
   "author": "Victor Evangelista",
   "license": "ISC",
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "dependencies": {
     "admin-lte": "2.3.11",
     "angular": "1.6.6",
