@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp --production"
+    "start": "gulp --production & index.js"
   },
   "keywords": [],
   "author": "Victor Evangelista",
