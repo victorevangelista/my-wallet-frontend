@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp heroku:production"
+    "start": "gulp --production"
   },
   "keywords": [],
   "author": "Victor Evangelista",
