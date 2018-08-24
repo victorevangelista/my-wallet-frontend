@@ -6,10 +6,10 @@ require('./gulpTasks/app')
 require('./gulpTasks/deps')
 require('./gulpTasks/server')
 
-gulp.task('default', () => {
+gulp.task('default', (done) => {
 	if(util.env.production) {
 		sequence('deps', 'app')
-		sleep(3000);
+		done()
 	}else{
 		sequence('deps', 'app', 'server')
 	}
