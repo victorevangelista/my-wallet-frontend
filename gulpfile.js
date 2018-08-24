@@ -6,9 +6,12 @@ require('./gulpTasks/app')
 require('./gulpTasks/deps')
 require('./gulpTasks/server')
 
-
-
-gulp.task('heroku:production', function(){
-  sequence('clean', 'build', 'minify')
+gulp.task('default', () => {
+	if(util.env.production) {
+		sequence('deps', 'app')
+		console.log("BUILD COMPLETE SUCCESS");
+	}else{
+		sequence('deps', 'app', 'server')
+	}
 })
 
