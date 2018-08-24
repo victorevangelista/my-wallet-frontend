@@ -9,7 +9,7 @@ require('./gulpTasks/server')
 gulp.task('default', () => {
 	if(util.env.production) {
 		sequence('deps', 'app')
-		console.log("BUILD COMPLETE SUCCESS");
+		sleep(3000);
 	}else{
 		sequence('deps', 'app', 'server')
 	}
