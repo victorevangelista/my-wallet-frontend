@@ -1,1 +1,1 @@
-web: npm install; gulp --production; http-server ./public -p $PORT
+web: npm install; gulp build; http-server ./public -p $PORT
