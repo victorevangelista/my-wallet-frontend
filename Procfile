@@ -1,1 +1,1 @@
-web: gulp --production; http-server ./public -p $PORT
+web: http-server ./public -p $PORT
